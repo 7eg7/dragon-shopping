@@ -11,7 +11,7 @@ async function loadCards()
         priceMultiplier=1;
     }
     try {
-        const response = await fetch('http://127.0.0.1:5500/card.json');
+        const response = await fetch('https://7eg7.github.io/dragon-shopping/card.json');
         let cardsJson= await response.json();
         //console.log(cardsJson);
         var cards = cardsJson.map(function (card) {
